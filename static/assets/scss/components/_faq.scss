@@ -1,0 +1,24 @@
+@use '../base' as *;
+
+/*Question*/
+.question {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+/*Answer*/
+.answers {
+  height: 0;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 5px 0;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}

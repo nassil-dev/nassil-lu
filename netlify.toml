@@ -1,0 +1,14 @@
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    Content-Security-Policy = "object-src 'none', connect-src; font-src fonts.gstatic.com; img-src 'self'; script-src 'self' 'unsafe-inline'; script-src-elem 'unsafe-inline' 'self'; style-src-attr 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline' fonts.googleapis.com"
+
+    # Content-Security-Policy-Report-Only = "default-src 'none'; form-action 'none'; frame-ancestors 'none'"
+  

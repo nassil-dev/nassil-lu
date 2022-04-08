@@ -1,0 +1,29 @@
+<header>
+  <div class="hdr-bar">
+    <div class="container"></div>
+  </div>
+  <div class="hdr-box">
+    <div class="container">
+      <picture>
+        <source
+          srcset="{{ .Site.BaseURL }}/images/logos/nassil-logo-300px.webp"
+          srcset="{{ .Site.BaseURL }}/images/logos/nassil-logo-600px.webp 2x"
+        />
+        <img
+          class="hdr-img"
+          src="{{ .Site.BaseURL }}/images/logos/nassil-logo-300px.png"
+          srcset="{{ .Site.BaseURL }}/images/logos/nassil-logo-600px.png 2x"
+          alt="Logo : Nassil - Cabinet de soins médico-esthétiques"
+        />
+      </picture>
+      <nav>
+        <menu>
+          <li><a href="{{ .Site.BaseURL }}">ACCEUIL</a></li>
+          <li><a href="#soins">SOINS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ITINÉRAIRE</a></li>
+        </menu>
+      </nav>
+    </div>
+  </div>
+</header>
