@@ -1,0 +1,82 @@
+@use '../base' as *;
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    @include transform(scale(0));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+@keyframes from-top {
+  0% {
+    @include transform(translateY(-100%));
+  }
+  100% {
+    @include transform(translateY(0%));
+  }
+}
+
+@keyframes from-bottom {
+  0% {
+    @include transform(translateY(100%));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+
+@keyframes from-bottom-far {
+  0% {
+    @include transform(translateY(1000px));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+
+@keyframes from-left {
+  0% {
+    @include transform(translateX(-100%));
+  }
+  100% {
+    @include transform(translateX(0%));
+  }
+}
+
+@keyframes from-right {
+  0% {
+    @include transform(translateX(100%));
+  }
+  100% {
+    @include transform(translateX(0%));
+  }
+}
+
+@keyframes rotate-to-right-90 {
+  0% {
+    @include transform(rotate(-90deg) scale(0.7));
+  }
+  100% {
+    @include transform(rotate(0));
+  }
+}
+
+@keyframes rotate-to-left-90 {
+  0% {
+    @include transform(rotate(90deg) scale(0.7));
+  }
+  100% {
+    @include transform(rotate(0));
+  }
+}
