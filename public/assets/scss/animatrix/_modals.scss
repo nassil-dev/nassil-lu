@@ -1,0 +1,31 @@
+@use '../base' as *;
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  bottom: env(safe-area-inset-bottom);
+  width: 100%;
+  min-height: 450px;
+  height: 55vh;
+  @include transform(translateY(100%));
+  z-index: 555;
+}
+
+.modal.visible {
+  @include transform(none !important);
+}
+
+.modal.trajet {
+  background-color: whitesmoke;
+}
+
+.modal.contact {
+  background-color: rgb(117, 95, 214);
+}
+
+.visible.animation {
+  @include transition(transform, 330ms, ease-out);
+}
+.animation {
+  @include transition(transform, 130ms, ease-out);
+}

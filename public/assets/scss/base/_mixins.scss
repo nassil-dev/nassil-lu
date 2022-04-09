@@ -1,0 +1,79 @@
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin grid() {
+  display: -moz-grid;
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin align($prop) {
+  -moz-box-align: $prop;
+  -ms-flex-align: $prop;
+  -webkit-box-align: $prop;
+  -webkit-align-items: $prop;
+  align-items: $prop;
+}
+
+@mixin justify($prop) {
+  -webkit-box-pack: $prop;
+  -moz-box-pack: $prop;
+  -ms-flex-pack: $prop;
+  -webkit-justify-content: $prop;
+  justify-content: $prop;
+}
+
+@mixin sticky() {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+}
+
+@mixin radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  border-radius: $amount;
+}
+
+@mixin animation($props...) {
+  -moz-animation: $props;
+  -webkit-animation: $props;
+  -o-animation: $props;
+  animation: $props;
+}
+
+@mixin transform($props) {
+  -ms-transform: $props;
+  -webkit-transform: $props;
+  -moz-transform: $props;
+  -o-transform: $props;
+  transform: $props;
+}
+
+@mixin transition($prop, $duration, $timing-function) {
+  -webkit-transition: $prop $duration $timing-function;
+  -moz-transition: $prop $duration $timing-function;
+  -o-transition: $prop $duration $timing-function;
+  transition: $prop $duration $timing-function;
+}
+
+@mixin animation-fm($props...) {
+  -moz-animation-fill-mode: $props;
+  -webkit-animation-fill-mode: $props;
+  -o-animation-fill-mode: $props;
+  animation-fill-mode: $props;
+}
