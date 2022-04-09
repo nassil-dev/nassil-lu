@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://nassil.lu/'
 languageCode = 'fr-lu'
 title = 'Nassil - Cabinet de Soins Médico-Esthétiques - Luxembourg'
 disableKinds = ["taxonomy"]
